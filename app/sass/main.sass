@@ -1,0 +1,99 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+* 
+	outline: 0 !important
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background: #161617
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+// style
+
+
+.first__screen
+	width: 100%
+	height: 100%
+	background: url(../img/background-1.png) no-repeat 
+	background-size: 100% 100%
+.second__screen
+	width: 100%
+	height: 100%
+	background: url(../img/background-2.png) no-repeat 
+	background-size: 100% 100%
+.third__screen
+	width: 100%
+	height: 100%
+	background: url(../img/background-3.png) no-repeat 
+	background-size: 100% 100%
+.fourth__screen
+	width: 100%
+	height: 100%
+	background: url(../img/background-4.png) no-repeat 
+	background-size: 100% 100%
+.fifth__screen
+
+.content__block
+	width: 100%
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 70px
+	color: rgba(76, 54, 255, 0.8)
+
+// navigation menu my custome style
+
+.right
+	// border: 1px solid red
+	left: 7.6%
+	padding-bottom: 5px
+
+a.active
+	border: 10px solid rgba(76, 54, 255, 0.2)
+	border-radius: 50%
+
+//////////////////////////////////////
+
+				
+
+
+
+
+
+@import "media" // Always at the end
