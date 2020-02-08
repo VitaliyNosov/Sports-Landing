@@ -3,7 +3,7 @@
 @import "libs"
 
 ::placeholder
-	color: #666
+	color: #EDEDED
 
 ::selection
 	background-color: $accent
@@ -45,7 +45,6 @@ b, strong
 
 // style
 
-
 .first__screen
 	width: 100%
 	height: 100%
@@ -54,6 +53,8 @@ b, strong
 
 .content__block
 	width: 100%
+
+// header menu
 
 .header__menu
 	width: 100%
@@ -116,16 +117,187 @@ b, strong
 	line-height: 7.23px
 	letter-spacing: 0.12px
 
+//animation block circle
+
+.block__animation__circle
+	width: 384px
+	height: 200px
+	margin-top: 150px
+	margin-left: 150px
+	position: relative
+	
+.circle__animation
+	width: 15px
+	height: 15px
+	border: 5px solid #5327ff
+	box-shadow: 0 0 10px rgba(83, 39, 255, 0.6)
+	border-radius: 50%
+
+.one__animation 
+	position: absolute
+	left: 41%
+	top: 27%
+	animation: circle__animation 2s infinite alternate
+
+.two__animation
+	position: absolute
+	left: 85%
+	top: 45%
+	animation: circle__animation 1.8s infinite alternate
+
+.three__animation
+	position: absolute
+	left: 80%
+	top: 88%
+	animation: circle__animation 1.2s infinite alternate
+
+.four__animation
+	position: absolute 
+	left: 5%
+	top: 82%
+	animation: circle__animation 0.8s infinite alternate
+
+
+//aniamtion block
+
+@keyframes circle__animation 
+
+	0%
+		width: 15px
+		height: 15px
+	100%
+		width: 18px
+		height: 18px
+		box-shadow: 0 0 15px rgba(83, 39, 255, 0.8)
+
+// email block 
+
+.block__email__one
+	width: 100%
+	height: 400px
+	margin-top: 50px
+	display: flex 
+	justify-content: flex-end
+
+.header__block
+	width: 100%
+	display: flex 
+	justify-content: flex-end
+
+.header__block__text
+	width: 411px
+	span
+		width: 411px
+		color: #ffffff
+		font-family: "GilroyExtraBold"
+		font-size: 191px
+		font-weight: 400
+		line-height: 128.97px
+		
+.form__block 
+	width: 411px
+	height: 100px
+	margin-top: 25px
+	display: flex
+	justify-content: center
+
+.input__one 
+	width: 70%
+	background: none 
+	border: none
+	border-bottom: 2px solid rgba(83, 39, 255, 0.8)
+	font-family: "GilroyUltraLight"
+	color: #EDEDED
+
+.input__two
+	width: 60%
+	margin-top: 15px
+	background: none 
+	border: none
+	border-bottom: 2px solid rgba(83, 39, 255, 0.8)
+	font-family: "GilroyUltraLight"
+	color: #EDEDED
+		
+.email__button__block
+	width: 411px
+	height: 80px
+	margin-top: 15px
+	border-radius: 50px
+	background: url(../img/gradien__button.png)no-repeat center
+	background-size: 100% 100%
+	display: flex 
+	justify-content: center
+	align-items: center
+	color: #fff
+	font-size: 24px
+	font-family: "GilroyExtraBold"
+	cursor: pointer
+	&:hover 
+		color: #EDEDED
+		box-shadow: 0 0 20px rgba(83, 39, 255, 0.8)
+
+
+// block video
+
 .second__screen
 	width: 100%
 	height: 100%
-	background: url(../img/workoutmen_.png) no-repeat 
+	background: url(../img/workoutmen2.png) no-repeat center 
 	background-size: 100% 100%
+
+.video__block__info
+	width: 100%
+	height: 500px
+	margin-top: 100px
+	padding-left: 100px
+	position: relative
+
+.video__block__text
+	height: 260px
+
+.text__header 
+	height: 80px
+	margin-bottom: 10px
+	color: #fff
+	font-size: 68px
+	font-family: "GilroyExtraBold" 
+
+.video__block__text__info
+	margin-top: 10px
+	font-size: 16px
+	color: #fff
+	font-family: "GilroyUltraLight"
+	span
+		font-family: "GilroyExtraBold" 
+
+.video__block__icon
+	width: 270px
+	height: 270px
+	border-radius: 50%
+	position: absolute
+	top: 40%
+	left: 44%
+
+// block third content
+
 .third__screen
 	width: 100%
 	height: 100%
 	background: url(../img/background-3.png) no-repeat 
 	background-size: 100% 100%
+	position: relative
+
+.third__screen__action
+	width: 420px
+	height: 420px
+	position: absolute
+	top: 0
+	left: 40%
+	z-index: 10
+
+///////////////////////////////////////
+
+
 .fourth__screen
 	width: 100%
 	height: 100%
@@ -147,7 +319,7 @@ b, strong
 
 .right
 	// border: 1px solid red
-	left: 7.6%
+	left: 7.3%
 	padding-bottom: 5px
 
 a.active
