@@ -4,6 +4,7 @@ $(function() {
 
 	$('#fullpage').fullpage({
 		navigation: true
+		// scrollOverflow: true
 	});
 
 
@@ -42,6 +43,8 @@ $(function() {
 		// Parameters has to be in square bracket '[]'
 		slider.trigger('prev.owl.carousel', [300]);
 	})
+
+
 
 
 
